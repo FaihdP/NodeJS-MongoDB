@@ -1,0 +1,22 @@
+<form action="/edit/{{task._id}}" method="post">
+  <div class="form-floating mb-4">
+    <input
+      type="text"
+      name="title"
+      id="title"
+      class="form-control"
+      placeholder="."
+      value="{{task.title}}"
+    /><label for="title" class="form-label">Title</label>
+  </div>
+  <div class="form-floating mb-4">
+    <textarea
+      name="description"
+      id="textarea"
+      class="form-control"
+      placeholder="."
+    > {{task.description}} </textarea>
+    <label for="textarea" class="form-label">Description</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
